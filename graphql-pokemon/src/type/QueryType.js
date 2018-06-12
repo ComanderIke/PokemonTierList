@@ -32,6 +32,9 @@ const QueryType = new GraphQLObjectType({
         first: {
           type: new GraphQLNonNull(GraphQLInt),
         },
+        type: {
+          type: GraphQLString,
+        },
       },
       resolve: async (obj, args) => await getPokemons(args),
     },

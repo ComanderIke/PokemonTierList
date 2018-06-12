@@ -1,10 +1,28 @@
 import pokemons from '../pokemons/pokemons.json';
 
 export async function getPokemons(args) {
-  const searchedPokemons = pokemons.slice(0, args.first);
+  const { first, type } = args;
+  let searchedPokemons = null;
+  if (type) {
+      searchedPokemons = getPokemonsByType(type);
+      console.log(searchedPokemons);
+  } else {
+      searchedPokemons = pokemons.slice(0, first)
+  }
 
   // const edges = searchedPokemons.map(pokemon => ({ node: pokemon }));
 
+  return searchedPokemons || null;
+}
+
+export async function getPokemonsByType(pokemonTypeSearch) {
+  const pokemonType = pokemonTypeSearch.toLowerCase().trim();
+
+  const searchedPokemons = pokemons.filter(({types}) =>
+    types.map( type => type.toLowerCase()).indexOf(pokemonType) > -1
+  );
+
+  console.log(searchedPokemons);
   return searchedPokemons || null;
 }
 
