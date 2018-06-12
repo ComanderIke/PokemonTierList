@@ -14,6 +14,8 @@ Vue.use(BootstrapVue)
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
