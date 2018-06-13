@@ -1,14 +1,16 @@
 <template>
-  <div class="pokemon">
-    {{name}}
-    <img :src="image" height="200"/>
-  </div>
+  <router-link :to="{ name: 'detail', params: { name: name }}">
+    <div class="pokemon">
+      <img :src="image" height="200"/>
+      {{number}} {{name}} {{types}}
+    </div>
+  </router-link>
 </template>
 
 <script>
 export default {
   name: 'ListItem',
-  props: ['number', 'name', 'type', 'image']
+  props: ['number', 'name', 'types', 'image']
 }
 </script>
 

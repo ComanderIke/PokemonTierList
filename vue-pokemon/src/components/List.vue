@@ -38,8 +38,8 @@ export default {
           }
         }`,
         variables: {
-          first: 3,
-          type: 'Water'
+          first: 160,
+          type: ''
         }
       }
     }
