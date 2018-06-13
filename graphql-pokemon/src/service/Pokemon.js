@@ -8,7 +8,7 @@ export async function getPokemons(args) {
   } else {
     searchedPokemons = pokemons;
   }
-
+  console.log("salsa");
   searchedPokemons = searchedPokemons.slice(0, first);
   // const edges = searchedPokemons.map(pokemon => ({ node: pokemon }));
 
@@ -22,7 +22,7 @@ function getPokemonsByType(pokemonTypeSearch) {
     types.map(type => type.toLowerCase()).indexOf(pokemonType) > -1
   );
 
-  console.log(searchedPokemons);
+
   return searchedPokemons || null;
 }
 
