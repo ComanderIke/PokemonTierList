@@ -1,11 +1,14 @@
 <template>
-  <li>{{name}}, {{type}}</li>
+  <div class="pokemon">
+    {{name}}
+    <img :src="image" height="200"/>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'ListItem',
-  props: ['name', 'type']
+  props: ['number', 'name', 'type', 'image']
 }
 </script>
 
@@ -24,5 +27,12 @@ export default {
   }
   a {
     color: #42b983;
+  }
+  .pokemon {
+    box-sizing: border-box;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
   }
 </style>

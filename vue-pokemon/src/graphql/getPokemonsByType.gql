@@ -1,0 +1,8 @@
+query getPokemonsByType ($first: Int!, $type: String!){
+  pokemons(first: $first, type: $type) {
+    number,
+    name,
+    types,
+    image
+  }
+}
