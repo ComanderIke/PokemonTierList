@@ -44,7 +44,7 @@ export default {
       }`,
       variables () {
         return {
-          first: 160,
+          first: 151,
           type: this.selectedType
         }
       }
