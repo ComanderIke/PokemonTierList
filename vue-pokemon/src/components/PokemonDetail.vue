@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>{{pokemon.number}} test {{pokemon.name}}</h1>
+        <h1>{{pokemon.number}} - {{pokemon.name}}</h1>
         <div class="pokemon">
             <div class="image">
                 <img :src="pokemon.image" width="40%">
