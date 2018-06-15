@@ -9,6 +9,8 @@
   },
   "bugs": "https://github.com/lucasbento/graphql-pokemon/issues",
   "dependencies": {
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.0.4",
     "graphql": "^0.8.2",
     "graphql-relay": "^0.5.5",
     "koa": "^2.0.0",
