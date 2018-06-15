@@ -6,7 +6,7 @@
       <b-button v-for="type in types" :key="type" @click="updateType($event, type)">{{type}}</b-button>
     </div>
     <div class="list">
-      <div v-if="$apollo.loading">Loading...</div>
+      <div v-if="$apollo && $apollo.loading">Loading...</div>
       <list-item v-for="pokemon in pokemons" :key="pokemon.id" :number="pokemon.number" :name="pokemon.name" :types="pokemon.types" :image="pokemon.image"></list-item>
     </div>
   </div>
