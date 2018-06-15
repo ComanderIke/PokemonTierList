@@ -41,7 +41,8 @@
   "repository": "https://github.com/lucasbento/graphql-pokemon",
   "scripts": {
     "eslint": "eslint src/*",
-    "build": "rm -rf dist/* && babel src --out-dir dist --copy-files",
+    "build-first": "babel src --out-dir dist --copy-files",
+    "build": "rd /s /q dist && babel src --out-dir dist --copy-files",
     "build-schema": "babel-node ./scripts/buildSchema.js",
     "start": "node dist/index.js",
     "watch": "nodemon src/index.js --exec babel-node --copy-files"
