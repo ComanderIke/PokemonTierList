@@ -10,7 +10,7 @@ This project consists of:
  * a PWA manifest + serviceworker
 
 To see the PWA capabilities like adding to the homescreen, look at:
-https://pokemonlist-ec318.firebaseapp.com/#/
+https://pokemonvue-34b96.firebaseapp.com
 Unfortunately we weren't able to deploy the GraphQL Server so it has to run locally.
 
 Local configuration:
