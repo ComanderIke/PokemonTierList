@@ -160,6 +160,7 @@ export default {
         background: green;
         color: lightgreen;
         text-align: center;
+        margin-bottom: 0px;
     }
 
     h1 {
