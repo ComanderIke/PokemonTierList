@@ -7,7 +7,7 @@ module.exports = {
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
+      .assert.containsText('h1', 'Welcome to Pokemon Vue')
       .assert.elementCount('img', 2)
       .end()
   }
