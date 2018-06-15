@@ -1,5 +1,7 @@
 # PokemonTierList
 
+Created by Stefan Höller and Daniel Kepplinger.
+
 This project consists of:
  * a list of pokemons
  * a detail page.
