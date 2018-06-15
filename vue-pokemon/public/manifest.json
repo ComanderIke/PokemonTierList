@@ -1,6 +1,6 @@
 {
-  "name": "vue-pokemon",
-  "short_name": "vue-pokemon",
+  "name": "Pokemon Vue",
+  "short_name": "PokeVue",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
