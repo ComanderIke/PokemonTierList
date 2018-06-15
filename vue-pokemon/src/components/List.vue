@@ -2,8 +2,8 @@
   <div>
     <h1>{{ msg }}</h1>
     <div class="types">
-      <b-button @click="updateType(event, '')">All</b-button>
-      <b-button v-for="type in types" :key="type" @click="updateType($event, type)">{{type}}</b-button>
+      <b-button class="type" @click="updateType(event, '')">All</b-button>
+      <b-button class="type" v-for="type in types" :key="type" @click="updateType($event, type)">{{type}}</b-button>
     </div>
     <div class="list">
       <div v-if="$apollo && $apollo.loading">Loading...</div>
@@ -80,5 +80,9 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-auto-flow: row;
+  }
+
+  .type {
+    margin: 1px;
   }
 </style>
